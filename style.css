@@ -1,0 +1,105 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animateS 10s linear infinite;
+}
+@keyframes animateS{
+    0%
+    {
+        left: 0%;
+    }
+    10%{
+        left: 0%;
+    }
+    20%
+    {
+        left: -100%;
+    }
+    30% {
+        left: -100%;
+    }
+    40%
+    {
+        left: -200%;
+    }
+    50% {
+        left: -200%;
+    }
+    60%
+    {
+        left: -300%;
+    }
+    70% {
+        left: -300%;
+    }
+    80%
+    {
+        left: -400%;
+    }
+    90% {
+        left: -400%;
+    }
+    100%
+    {
+        left: 0%;
+    }
+}
+.container .slider .slide{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.container .slider .slide .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+    padding: 20px;
+    background: rgba(0, 0, 0, .7);
+    box-sizing: border-box;
+}
+.container .slider .slide .caption h2{
+    margin: 0;
+    padding: 0; 
+    color: #fff;
+}
+.container .slider .slide .caption p{
+    color: rgb(200, 200, 200);
+}
+.container .slider .cod {
+    background: url(Img/cod.jpeg) no-repeat center;
+    background-size: 100%;
+}
+.container .slider .cs {
+    background: url(Img/cs.jpeg) no-repeat center;
+    background-size: cover;
+}
+.container .slider .nfs {
+    background: url(Img/nfs.jpeg) no-repeat center;
+    background-size: cover;
+}
+.container .slider .pubg {
+    background: url(Img/pubg.jpeg) no-repeat center;
+    background-size: cover;
+}
+.container .slider .witcher {
+    background: url(Img/witcher.jpeg) no-repeat center;
+    background-size: cover;
+}
+
